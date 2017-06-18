@@ -42,11 +42,14 @@
     position: absolute;
     visibility: hidden;
     top: 32px;
+    z-index: 4;
     
 }
 
 #navMenu ul li:hover ul{
-    visibility: visible
+    visibility: visible;
+    z-index: 5;
+      
 }
 
 /*******/
