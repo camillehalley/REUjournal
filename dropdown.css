@@ -128,4 +128,10 @@ img {
     z-index: 7;
 }
 
+#slidewrap{
+    width:200px;
+    position:relative;
+    overflow:hidden;
+}
+
 
