@@ -1,0 +1,37 @@
+
+<html>
+<head>
+<title> My REU Experience </title>
+<link rel="stylesheet" href="/REUjournal/dropdown.css">
+
+</head>
+
+<body>	
+<body style="background-color:#F4F5F5;">
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<div id="menu"> </div>
+
+<script>$( "#menu" ).load( "jMenu.htm #header");</script>
+	
+<div class="container">
+  <img src="http://i.imgur.com/oBPSY46.jpg" id="flowers" alt="Norway" width="1000" height="200">
+  <div class="topleft">
+	<h1> Closing Thoughts </h1>
+	<h3> On a Project that Continues </h3>
+	<p> I’ve been able to finish the design of Snag’ Em over the course of the summer, though there is still a good amount of site
+  development left to complete.  Since I’d like my new interface to be utilized, I’m planning to continue working on the development of
+  the site over the next few weeks.  Once this is up and running, there is the possibility of running a study to validate the design
+  decisions I’ve made and examine the effects of Snag’ Em on it’s users.  </p>
+	  
+	
+
+	
+<!--	<a href="aboutus.htm">About Us</a>-->
+	 </div>
+</div>
+
+
+
+</body>
+</html>
