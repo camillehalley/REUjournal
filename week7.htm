@@ -2,24 +2,27 @@
 <head>
 <title> My REU Experience </title>
 <link rel="stylesheet" href="/REUjournal/dropdown.css">
-
 </head>
-
 <body>
-
 <body style="background-color:#F4F5F5;">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <div id="menu"> </div>
-
 <script>$( "#menu" ).load( "jMenu.htm #header");</script>
 <div class="container">
   <img src="http://i.imgur.com/oBPSY46.jpg" id="flowers" alt="Norway" width="1000" height="200">
   <div class="topleft">
 	<h1> Week 7 </h1>
     <h3> Testing </h3>
+	  
+	<script> 
+	$('iframe[src*="youtube"]').parent().fitVids();
+	$('iframe[src*="drive"]').parent().fitVids();
+	$("#vid_div").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"}); 
+	</script>
+	  
 <iframe src="https://drive.google.com/file/d/1_zi0p23xCgM_kMp1WeQKdNMtCY0QNccp/preview?autoplay=1" width="640" height="480"></iframe>
 <iframe src="https://drive.google.com/file/d/1mzyrcO04xLd9zQHTL_5FTOttLOCPJE42/preview" width="500" height="350"></iframe>
-	    </div>
+</div>
 </div>
 </body>
 </html>
