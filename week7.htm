@@ -1,4 +1,4 @@
-<script>
+<!--<script>
 
 /*jshint browser:true */
 /*!
@@ -84,7 +84,7 @@
   $.fn.fitVids._count = 0; 
 // Works with either jQuery or Zepto
 })( window.jQuery || window.Zepto );
-</script>
+</script>-->
 
 
 
@@ -104,11 +104,7 @@
 	<h1> Week 7 </h1>
     <h3> Testing </h3>
 	  
-	<script> 
-	$("#vid_div").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"});
-	$("#vid_div2").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"});
 
-	</script>
 	  
 <div id="vid_div" style="width: 600px; height:400px;">	  
 <!--<iframe src="https://drive.google.com/file/d/1_zi0p23xCgM_kMp1WeQKdNMtCY0QNccp/preview?autoplay=1" width="640" height="480"></iframe>-->
@@ -130,3 +126,11 @@
 </div>
 </body>
 </html>
+	
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+ <script src="jquery.fitvids.js"></script>
+	<script> 
+	$("#vid_div").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"});
+	$("#vid_div2").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"});
+
+	</script>
