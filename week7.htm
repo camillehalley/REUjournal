@@ -105,19 +105,18 @@
     <h3> Testing </h3>
 	  
 	<script> 
-	$('iframe[src*="youtube"]').parent().fitVids();
-	$('iframe[src*="drive"]').parent().fitVids();
-	$("#vid_div").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"}); 
+	$("#vid_div").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"});
+	$("#vid_div2").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"});
+
 	</script>
-<!--<div style="height: 100px;">
--->	  
+	  
 <div id="vid_div" style="width: 600px; height:400px;">	  
 <!--<iframe src="https://drive.google.com/file/d/1_zi0p23xCgM_kMp1WeQKdNMtCY0QNccp/preview?autoplay=1" width="640" height="480"></iframe>-->
 	<iframe src="https://drive.google.com/file/d/1mzyrcO04xLd9zQHTL_5FTOttLOCPJE42/preview" frameborder="0" allowfullscreen></iframe>
 	<iframe src="https://drive.google.com/file/d/1_zi0p23xCgM_kMp1WeQKdNMtCY0QNccp/preview" frameborder="0" allowfullscreen></iframe>
 </div>
 	  
-<div id="vid_div">
+<div id="vid_div2">
 	<iframe src="https://drive.google.com/file/d/1mzyrcO04xLd9zQHTL_5FTOttLOCPJE42/preview" frameborder="0" allowfullscreen max_width = "100%" height="300px"></iframe>
 	<iframe src="https://drive.google.com/file/d/1_zi0p23xCgM_kMp1WeQKdNMtCY0QNccp/preview" frameborder="0" allowfullscreen width="500px" height="200px"></iframe>		  
 </div>
