@@ -1,31 +1,78 @@
-
+<!DOCTYPE html>
 <html>
-<head>
-<title> My REU Experience </title>
-<link rel="stylesheet" href="/REUjournal/dropdown.css">
-</head>
-<body>
-<body style="background-color:#F4F5F5;">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<div id="menu"> </div>
-<script>$( "#menu" ).load( "jMenu.htm #header");</script>
-<div class="container">
-  <img src="http://i.imgur.com/oBPSY46.jpg" id="flowers" alt="Norway" width="1000" height="200">
-  <div class="topleft">
-	<h1> Week 7 </h1>
-	<h3> Wow this is going by so fast... </h3>
-	<p>We only have a two more weeks left!  It's all going by incredibly fast - seems surreal to be wrapping up our research already.
-  With the end of the program coming up, I'm beginning to work on my poster and presentation for our symposium.  I'm also working to
-  ensure the code I finish is at a level where it's useable and easily comprehensible, which it needs to be for the grad students
-  working on Snag' Em next semester to use my interface design.  </p>
-  <h3> Running & relaxing </h3>
-	  <p>
-    Cross country season is staring not that long from now, and I'm so excited to be back with the team for one last year of cross
-    country! I'm raising my mileage a bit so I put a lot of time into running and recovering afterwards.  I spent the rest of my spare time 
-    eating new kinds of food and watching stand-up comedy with friends.  After so many weeks of city wandering it was refreshing to spend 
-    one just excercising, eating, and chilling on the couch with some of my favorite people.  
-</p>
-	 </div>
-</div>
-</body>
-</html>
+	<head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Fluid Width Videos with Fitvids.js</title>
+        <style>
+          body {
+            background: #ddd;
+          }
+          video {
+            max-width: 100%;
+            height: auto;
+          }
+          iframe,
+          embed,
+          object {
+            max-width: 100%;
+          }
+          .container {
+            width: 70%;
+            padding: 5%;
+            margin:0px auto;
+            background:#fff;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+          }
+          .vendor {
+            padding: 2%;
+            background: #d1eed1;
+            margin-bottom: 2em;
+          }
+          .unsupported {
+            background: #fddfde;
+          }
+        </style>
+    </head>
+    <body>
+      <div class="container">
+        <div class="vendor">
+        	<iframe width="425" height="349" src="http://www.youtube.com/embed/FKWwdQu6_ok" frameborder="0" allowfullscreen></iframe>
+	      </div>
+	      <div class="vendor">
+	<iframe src="https://drive.google.com/file/d/1mzyrcO04xLd9zQHTL_5FTOttLOCPJE42/preview" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="vendor">
+        	<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="437" height="288" id="viddler"><param name="movie" value="http://www.viddler.com/player/d6c37b62/" /><param name="allowScriptAccess" value="always" /><param name="allowFullScreen" value="true" /><param name="flashvars" value="fake=1"/><embed src="http://www.viddler.com/player/d6c37b62/" width="437" height="288" type="application/x-shockwave-flash" allowScriptAccess="always" allowFullScreen="true" flashvars="fake=1" name="viddler" ></embed></object>
+        </div>
+        <div class="vendor">
+        	<embed src="http://blip.tv/play/AYHCnikC" type="application/x-shockwave-flash" width="550" height="396" wmode="transparent" allowscriptaccess="always" allowfullscreen="true" ></embed>
+        </div>
+        <div class="vendor">
+<iframe frameborder="0" height="410px" src="http://www.kickstarter.com/projects/30453381/the-shape-of-design/widget/video.html" width="480px"></iframe>
+        </div>
+        <div class="vendor">
+          <iframe frameborder="0" height="380" src="http://www.kickstarter.com/projects/150422311/screencasting-a-complete-redesign/widget/card.html" width="220"></iframe>
+        </div>
+        <p>^^ The above kickstarter widget should fail.</p>
+        <div class="vendor">
+          <iframe width="520px" height="391px" src="http://socialcam.com/videos/XRMP3Y5t/embed?utm_campaign=web&utm_source=embed" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="vendor">
+          <iframe class="fitvidsignore" src="http://player.vimeo.com/video/28523422?title=0&amp;byline=0&amp;portrait=0&amp;color=4584be" width="800/embed/?moog_width=800" height="450" frameborder="0"></iframe>
+        </div>
+        <p>^^ The above vimeo embed should fail. It has a class of 'fitvidsignore'.
+
+      </div>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="jquery.fitvids.js"></script>
+      <script>
+        // Basic FitVids Test
+        $(".container").fitVids();
+        // Custom selector and No-Double-Wrapping Prevention Test
+        $(".container").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"});
+	      /*$("#vid_div").fitVids({ customSelector: "iframe[src^='https://drive.google.com']"});*/
+
+      </script>
+      </body>
+  </html>
